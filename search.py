@@ -6,8 +6,6 @@ import re
 import string
 from os import listdir
 
-# import sys, time
-
 class SearchIndex(object):
     """
     Maintain a search index.
@@ -68,34 +66,3 @@ class SearchIndex(object):
 
                 if phrase_found:
                     yield doc
-
-# search_index = SearchIndex()
-
-
-
-# def main(*args):
-#     """
-#     Let's search!
-#     """
-#     print "hello"
-#     begin_init_time = time.time()
-#     search = SearchIndex()
-#     end_init_time = time.time()
-
-#     total_init_time = end_init_time - begin_init_time
-
-#     print 'Search Initialized in {0} seconds.'.format(total_init_time)
-
-#     begin_search_time = time.time()
-#     results = list(search.search('hacker crackdown'))
-#     end_search_time = time.time()
-
-#     total_search_time = end_search_time - begin_search_time
-
-#     print results
-
-#     print 'Search completed in {0} seconds.'.format(total_search_time)
-
-
-# if __name__ == '__main__':
-#     main(*sys.argv)
