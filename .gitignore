@@ -105,3 +105,8 @@ venv.bak/
 
 # ignore vscode
 .vscode
+
+# don't version control the test data :\
+docs
+
+/node_modules/**
